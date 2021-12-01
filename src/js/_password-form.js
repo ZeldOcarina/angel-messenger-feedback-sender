@@ -2,7 +2,7 @@ import showAlertMessage from "./_alert-message";
 import { passwordForm, modal, fieldSet } from "./_model";
 
 const correctPassword =
-  window.location.hostname === "localhost" ? "" : "BodyContourzExpansion";
+  window.location.hostname === "localhost" ? "" : "AngelLongevityExpansion";
 
 passwordForm.addEventListener("submit", (e) => {
   e.preventDefault();
