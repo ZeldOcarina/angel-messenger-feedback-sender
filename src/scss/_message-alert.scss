@@ -1,0 +1,21 @@
+.message-alert {
+  color: transparent;
+  position: absolute;
+  right: 5rem;
+  top: 3rem;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  z-index: 1051;
+  transition: transform 0.8s ease-in-out;
+
+  @media screen and (max-width: 600px) {
+    right: 20px;
+    top: 2rem;
+    max-width: 90%;
+    position: fixed;
+  }
+}
+
+.translated {
+  transform: translateX(50rem);
+}

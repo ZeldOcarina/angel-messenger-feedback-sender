@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+@import "abstracts";
+@import "message-alert";
+@import "spinner";
+
+body {
+  background-color: $background-color;
+  color: $secondary-color;
+}
+
+h1 {
+  color: $secondary-color;
+  font-family: "Roboto Slab", serif;
+}
+
+.main-section {
+  margin-top: 2rem;
+
+  @media screen and (max-width: 600px) {
+    padding-bottom: 2rem;
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.form-btn {
+  background: linear-gradient(180deg, #009cd2 0%, #0085b3 100%);
+  color: white;
+  margin-top: 0.5rem;
+
+  &:hover {
+    color: white;
+    background-color: #572a51;
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 3rem;
+  }
+}

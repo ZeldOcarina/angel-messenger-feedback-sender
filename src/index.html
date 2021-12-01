@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Contourz Subscription Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="https://www.angellongevity.com/assets/img/logonew.png"
+        alt="Angel Logo"
+      />
+    </header>
+    <section class="container main-section">
+      <h1 class="text-center">Angel Longevity<br>Messenger Feedback Flow Text Message Sender</h1>
+      <div class="form-container">
+          <fieldset disabled>
+            <form class="messenger-form form">
+              <div class="mb-3 form-group">
+                <label class="form-label" for="visit-name"
+                  >Patient Name</label
+                >
+                <input
+                  id="patient-name"
+                  class="form-control"
+                  name="first_name"
+                >
+              </div>
+              <div class="mb-3 form-group">
+                <label class="form-label" for="patient-last-name"
+                  >Patient Last Name</label
+                >
+                <input
+                  id="patient-last-name"
+                  class="form-control"
+                  name="last_name"
+                >
+              </div>
+              <div class="mb-3 form-group">
+                <label class="form-label" for="patient-email"
+                  >Patient Email</label
+                >
+                <input
+                type="email"
+                  id="patient-email"
+                  class="form-control"
+                  name="email"
+                >
+              </div>
+              <div class="mb-3 form-group">
+                <label class="form-label" for="patient-phone"
+                  >Patient Phone Number</label
+                >
+                <input
+                type="tel"
+                  id="patient-phone"
+                  class="form-control"
+                  name="phone_number"
+                >
+              </div>
+              <button type="submit" class="btn form-btn mb-3">Submit</button>
+          </form>
+            <span class="d-none spinner-container"
+                ><span
+                  class="spinner-grow spinner-grow-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Loading...</span
+              >
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <div class="message-alert translated"></div>
+    <div class="modal" tabindex="-1" role="dialog" id="password-modal">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center">
+              Please provide a password to continue.
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form class="password-form">
+              <div class="form-group mb-3">
+                <label for="modal-password mb-1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="modal-password"
+                  aria-describedby="password"
+                  placeholder="Enter password"
+                />
+                <small class="form-text text-muted"
+                  >Please provide a password to access the application.</small
+                >
+              </div>
+              <button type="submit" class="btn form-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="spinner-grow"
+      style="width: 3rem; height: 3rem"
+      role="status"
+    ></div>
+  </body>
+</html>
