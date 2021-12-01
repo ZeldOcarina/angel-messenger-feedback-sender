@@ -3,7 +3,7 @@ import { alertMessage } from "./_model";
 export default function showAlertMessage(type, message) {
   alertMessage.textContent = message;
 
-  if (type === success) {
+  if (type === "success") {
     alertMessage.classList.remove("bg-danger");
     alertMessage.classList.add("bg-success", "text-light");
   } else {
